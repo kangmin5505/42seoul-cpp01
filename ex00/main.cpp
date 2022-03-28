@@ -12,7 +12,6 @@
 
 #include "Zombie.hpp"
 
-#include <iostream>
 int	main() {
 	{
 		Zombie stack("stack");
@@ -24,6 +23,7 @@ int	main() {
 		heap->announce();
 		pheap = heap;
 	}
+	// stack.announce(); error
 	pheap->announce();
 	delete pheap;
 	pheap = nullptr;

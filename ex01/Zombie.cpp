@@ -17,12 +17,12 @@ void Zombie::set_name(const std::string& name) {
 	name_ = name;
 }
 
-Zombie::Zombie(void) { }
+Zombie::Zombie() { }
 
-Zombie::Zombie(const std::string& name) 
+Zombie::Zombie(const std::string &name) 
 	: name_(name) { };
 
-Zombie::~Zombie(void) {
+Zombie::~Zombie() {
 	std::cout << name_ << ": destroyed..." << std::endl;
 }
 
